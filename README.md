@@ -23,6 +23,18 @@ bash scripts/build_app.sh
 build/NiceTimer.app
 ```
 
+## 打包發佈版本
+
+```bash
+bash scripts/package_release.sh 0.1.0 1
+```
+
+打包完成後 zip 會在：
+
+```text
+dist/NiceTimer-0.1.0.zip
+```
+
 也可以開發時直接執行：
 
 ```bash
