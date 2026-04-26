@@ -2,4 +2,5 @@
 openspec/.vector-search.db*
 .build/
 build/
+dist/
 .DS_Store

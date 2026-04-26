@@ -3,6 +3,8 @@ set -euo pipefail
 
 APP_NAME="NiceTimer"
 CONFIGURATION="${1:-release}"
+VERSION="${2:-1.0.0}"
+BUILD_NUMBER="${3:-1}"
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 BUILD_DIR="$ROOT_DIR/.build/$CONFIGURATION"
 APP_DIR="$ROOT_DIR/build/$APP_NAME.app"
@@ -32,9 +34,9 @@ cat > "$CONTENTS_DIR/Info.plist" <<PLIST
   <key>CFBundlePackageType</key>
   <string>APPL</string>
   <key>CFBundleShortVersionString</key>
-  <string>1.0</string>
+  <string>$VERSION</string>
   <key>CFBundleVersion</key>
-  <string>1</string>
+  <string>$BUILD_NUMBER</string>
   <key>LSMinimumSystemVersion</key>
   <string>14.0</string>
   <key>NSHighResolutionCapable</key>

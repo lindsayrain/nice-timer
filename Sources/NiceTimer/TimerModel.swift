@@ -33,6 +33,30 @@ final class TimerModel: ObservableObject {
         TimeParts(totalSeconds: currentSeconds)
     }
 
+    var primaryActionTitle: String {
+        isRunning ? "暫停" : currentSeconds > 0 ? "開始" : mode == .countdown ? "開始" : "開始"
+    }
+
+    var menuBarTitle: String {
+        if isRunning || currentSeconds > 0 || didFinish {
+            return displayedTime.compactText
+        }
+        return mode == .countdown ? "Nice Timer" : "00:00"
+    }
+
+    var menuBarIconName: String {
+        didFinish ? "bell.fill" : isRunning ? "timer" : "timer.circle"
+    }
+
+    var modeDescription: String {
+        switch mode {
+        case .countdown:
+            return isRunning ? "倒數中" : "倒數"
+        case .stopwatch:
+            return isRunning ? "碼錶執行中" : "碼錶"
+        }
+    }
+
     var canEditDuration: Bool {
         mode == .countdown && !isRunning
     }
@@ -85,11 +109,9 @@ final class TimerModel: ObservableObject {
 
     func start() {
         if mode == .countdown {
-            let configuredSeconds = inputSeconds
-            if currentSeconds <= 0 || currentSeconds != configuredSeconds {
-                currentSeconds = configuredSeconds
+            if didFinish {
+                currentSeconds = inputSeconds
             }
-
             guard currentSeconds > 0 else {
                 statusText = "請先設定倒數時間"
                 return
@@ -172,5 +194,9 @@ struct TimeParts {
         hours = String(format: "%02d", bounded / 3600)
         minutes = String(format: "%02d", (bounded % 3600) / 60)
         seconds = String(format: "%02d", bounded % 60)
+    }
+
+    var compactText: String {
+        hours == "00" ? "\(minutes):\(seconds)" : "\(hours):\(minutes):\(seconds)"
     }
 }

@@ -49,18 +49,10 @@ struct ContentView: View {
 private struct TitleBar: View {
     var body: some View {
         HStack {
-            HStack(spacing: 8) {
-                Circle().fill(.red).frame(width: 12, height: 12)
-                Circle().fill(.yellow).frame(width: 12, height: 12)
-                Circle().fill(.green).frame(width: 12, height: 12)
-            }
-            .padding(.leading, 20)
-
-            Spacer()
-
             Text("Nice Timer")
                 .font(.system(size: 13, weight: .bold))
                 .foregroundStyle(Color.timerMuted)
+                .padding(.leading, 80)
 
             Spacer()
 
