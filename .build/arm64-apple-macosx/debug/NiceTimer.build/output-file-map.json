@@ -1,0 +1,26 @@
+{
+  "": {
+    "swift-dependencies": "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/NiceTimer.build/primary.swiftdeps"
+  },
+  "/Users/lindsayhsieh/Codex/nice-timer/Sources/NiceTimer/ContentView.swift": {
+    "dependencies": "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/NiceTimer.build/ContentView.d",
+    "object": "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/NiceTimer.build/ContentView.swift.o",
+    "swiftmodule": "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/NiceTimer.build/ContentView~partial.swiftmodule",
+    "swift-dependencies": "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/NiceTimer.build/ContentView.swiftdeps",
+    "diagnostics": "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/NiceTimer.build/ContentView.dia"
+  },
+  "/Users/lindsayhsieh/Codex/nice-timer/Sources/NiceTimer/NiceTimerApp.swift": {
+    "dependencies": "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/NiceTimer.build/NiceTimerApp.d",
+    "object": "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/NiceTimer.build/NiceTimerApp.swift.o",
+    "swiftmodule": "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/NiceTimer.build/NiceTimerApp~partial.swiftmodule",
+    "swift-dependencies": "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/NiceTimer.build/NiceTimerApp.swiftdeps",
+    "diagnostics": "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/NiceTimer.build/NiceTimerApp.dia"
+  },
+  "/Users/lindsayhsieh/Codex/nice-timer/Sources/NiceTimer/TimerModel.swift": {
+    "dependencies": "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/NiceTimer.build/TimerModel.d",
+    "object": "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/NiceTimer.build/TimerModel.swift.o",
+    "swiftmodule": "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/NiceTimer.build/TimerModel~partial.swiftmodule",
+    "swift-dependencies": "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/NiceTimer.build/TimerModel.swiftdeps",
+    "diagnostics": "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/NiceTimer.build/TimerModel.dia"
+  }
+}

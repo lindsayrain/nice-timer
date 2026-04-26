@@ -1,0 +1,289 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.NiceTimer-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/NiceTimer.build/sources",
+      "importPath" : "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/lindsayhsieh/Codex/nice-timer/Sources/NiceTimer/ContentView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/lindsayhsieh/Codex/nice-timer/Sources/NiceTimer/NiceTimerApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/lindsayhsieh/Codex/nice-timer/Sources/NiceTimer/TimerModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/NiceTimer.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "NiceTimer",
+      "moduleOutputPath" : "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/Modules/NiceTimer.swiftmodule",
+      "objects" : [
+        "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/NiceTimer.build/ContentView.swift.o",
+        "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/NiceTimer.build/NiceTimerApp.swift.o",
+        "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/NiceTimer.build/TimerModel.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "NiceTimer_main",
+        "-swift-version",
+        "6",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "nice_timer"
+      ],
+      "outputFileMapPath" : "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/NiceTimer.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/NiceTimer.build/ContentView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/NiceTimer.build/NiceTimerApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/NiceTimer.build/TimerModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/Modules/NiceTimer.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/lindsayhsieh/Codex/nice-timer/Sources/NiceTimer/ContentView.swift",
+        "/Users/lindsayhsieh/Codex/nice-timer/Sources/NiceTimer/NiceTimerApp.swift",
+        "/Users/lindsayhsieh/Codex/nice-timer/Sources/NiceTimer/TimerModel.swift"
+      ],
+      "tempsPath" : "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/NiceTimer.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "NiceTimer" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "NiceTimer",
+      "-package-name",
+      "nice_timer",
+      "-c",
+      "/Users/lindsayhsieh/Codex/nice-timer/Sources/NiceTimer/ContentView.swift",
+      "/Users/lindsayhsieh/Codex/nice-timer/Sources/NiceTimer/NiceTimerApp.swift",
+      "/Users/lindsayhsieh/Codex/nice-timer/Sources/NiceTimer/TimerModel.swift",
+      "-I",
+      "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "NiceTimer_main",
+      "-swift-version",
+      "6",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "nice_timer",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "NiceTimer" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/NiceTimer-entitlement.plist" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<entitlement-plist>"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<com.apple.security.get-task-allow>"
+        }
+      ],
+      "outputFilePath" : "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/NiceTimer-entitlement.plist"
+    },
+    "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/NiceTimer.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/lindsayhsieh/Codex/nice-timer/Sources/NiceTimer/ContentView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/lindsayhsieh/Codex/nice-timer/Sources/NiceTimer/NiceTimerApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/lindsayhsieh/Codex/nice-timer/Sources/NiceTimer/TimerModel.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/NiceTimer.build/sources"
+    },
+    "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/NiceTimer.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/NiceTimer.build/ContentView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/NiceTimer.build/NiceTimerApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/NiceTimer.build/TimerModel.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/NiceTimer.product/Objects.LinkFileList"
+    },
+    "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/lindsayhsieh/Codex/nice-timer/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}
