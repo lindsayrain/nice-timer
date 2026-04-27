@@ -167,7 +167,11 @@ final class TimerModel: ObservableObject {
         let elapsed = Int(now.timeIntervalSince(lastTickDate))
         guard elapsed > 0 else { return }
         self.lastTickDate = lastTickDate.addingTimeInterval(TimeInterval(elapsed))
+        advance(by: elapsed)
+    }
 
+    func advance(by elapsed: Int) {
+        guard elapsed > 0 else { return }
         switch mode {
         case .countdown:
             currentSeconds = max(0, currentSeconds - elapsed)

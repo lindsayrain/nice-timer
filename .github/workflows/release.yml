@@ -1,0 +1,58 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-release:
+    runs-on: macos-14
+
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Select Xcode
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest-stable
+
+      - name: Derive release metadata
+        id: meta
+        shell: bash
+        run: |
+          set -euo pipefail
+          tag="${GITHUB_REF_NAME}"
+          version="${tag#v}"
+          notes_path="release-notes/${tag}.md"
+
+          if [[ ! -f "${notes_path}" ]]; then
+            echo "Missing release note: ${notes_path}" >&2
+            exit 1
+          fi
+
+          if ! grep -q "!\[" "${notes_path}"; then
+            echo "Release note must include a screenshot markdown image." >&2
+            exit 1
+          fi
+
+          echo "tag=${tag}" >> "$GITHUB_OUTPUT"
+          echo "version=${version}" >> "$GITHUB_OUTPUT"
+          echo "notes_path=${notes_path}" >> "$GITHUB_OUTPUT"
+
+      - name: Build release assets
+        shell: bash
+        run: bash scripts/package_release.sh "${{ steps.meta.outputs.version }}" "${{ github.run_number }}"
+
+      - name: Publish GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.meta.outputs.tag }}
+          body_path: ${{ steps.meta.outputs.notes_path }}
+          files: |
+            dist/NiceTimer-${{ steps.meta.outputs.version }}.zip
+            dist/NiceTimer-${{ steps.meta.outputs.version }}.dmg

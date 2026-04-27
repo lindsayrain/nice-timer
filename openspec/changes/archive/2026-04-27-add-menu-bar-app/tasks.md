@@ -12,7 +12,7 @@
 
 ## 3. Validation
 
-- [ ] 3.1 Verify countdown mode stays synchronized between the menu bar and main window.
-- [ ] 3.2 Verify stopwatch mode stays synchronized between the menu bar and main window.
-- [ ] 3.3 Verify start, pause, resume, and reset all work from the menu bar.
-- [ ] 3.4 Verify the menu bar remains functional when the main window is closed.
+- [x] 3.1 Verify countdown mode stays synchronized between the menu bar and main window.
+- [x] 3.2 Verify stopwatch mode stays synchronized between the menu bar and main window.
+- [x] 3.3 Verify start, pause, resume, and reset all work from the menu bar.
+- [x] 3.4 Verify the menu bar remains functional when the main window is closed.

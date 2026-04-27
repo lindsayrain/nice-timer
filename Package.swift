@@ -14,6 +14,11 @@ let package = Package(
         .executableTarget(
             name: "NiceTimer",
             path: "Sources/NiceTimer"
+        ),
+        .testTarget(
+            name: "NiceTimerTests",
+            dependencies: ["NiceTimer"],
+            path: "Tests/NiceTimerTests"
         )
     ]
 )
