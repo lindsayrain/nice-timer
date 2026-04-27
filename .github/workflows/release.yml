@@ -52,6 +52,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.meta.outputs.tag }}
+          name: NiceTimer v${{ steps.meta.outputs.version }}
           body_path: ${{ steps.meta.outputs.notes_path }}
           files: |
             dist/NiceTimer-${{ steps.meta.outputs.version }}.zip
